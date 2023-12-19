@@ -1,0 +1,96 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+/* ===== Colours ===== */
+:root {
+  --body-color: #fff;
+  --nav-color: #e0e0e0;
+  --nav-text: #18191a;
+  --text-color: #18191a;
+  --subtext-color: #242526;
+  --search-bar: #f2f2f2;
+  --backredes-color: #151515;
+  --success: #0abf30;
+}
+
+body.dark {
+  --body-color: #18191a;
+  --nav-color: #242526;
+  --nav-text: #fff;
+  --text-color: #ccc;
+  --secondtext-color: #fff;
+  --search-bar: #242526;
+  --backredes-color: #151515;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--body-color);
+  position: relative;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+  opacity: 0.15;
+  z-index: -1;
+}
+
+body.dark nav {
+  border: 1px solid #393838;
+}
+
+body.dark .search-field input {
+  color: var(--text-color);
+}
+
+.centralizer {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+
+:root {
+  --font-family-main: "Open Sans", sans-serif;
+  --font-family-heading: "Montserrat", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-semi-bold: 600;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+}
+p {
+  font-family: var(--font-family-main);
+  font-weight: var(--font-weight-regular);
+}
+a {
+  font-family: var(--font-family-main);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}

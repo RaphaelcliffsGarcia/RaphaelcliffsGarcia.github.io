@@ -1,0 +1,94 @@
+.s-skills {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinhar os itens à esquerda */
+  flex-wrap: wrap;
+  height: auto;
+  padding: 8px;
+}
+
+#skills-text {
+  width: 48%; /* Largura ajustável conforme necessário */
+}
+
+.skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 48%; /* Largura ajustável conforme necessário */
+}
+
+.skills-cards li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-bottom: 24px;
+  height: 100px;
+  background-color: #151515;
+  position: relative;
+  border: 1px solid #1f1f1f;
+  border-radius: 4px;
+  transition: 1s all ease;
+}
+.skills-cards img {
+  width: 60px;
+  height: 60px;
+}
+
+#ffstyle {
+  color: var(--secondtext-color);
+}
+#ffstyle h2 {
+  margin-bottom: 8px;
+}
+
+/* Quando hover em .skills-cards dentro de .dark */
+.dark .skills-cards li:hover {
+  background-color: var(--backredes-color-dark);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Quando hover em .skills-cards (fora de .dark) */
+.skills-cards li:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+/* Evitar que a sombra seja aplicada à imagem quando hover em .skills-cards */
+.skills-cards li img:hover {
+  box-shadow: none;
+}
+
+.js-tabcontent section {
+  opacity: 0;
+  transform: translate3d(-50px, 0, 0);
+  visibility: hidden;
+  display: none; /* Mantendo o display: none; */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.js-tabcontent section.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  display: block; /* Exibindo a section quando ativo */
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -1,0 +1,9 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+@import "./main/main.css";
+@import "./main/sobremim.css";
+@import "./slider/slider.css";
+@import "./conhecimento/conhecimento.css";
+@import "./academy/academy.css";
+@import "./global/toast.css";

@@ -1,0 +1,93 @@
+.mainsection {
+  min-height: 100vh;
+}
+.ebELbh {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ebELbh .nameLogoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0px;
+}
+.mainLogo {
+  height: 550px;
+  display: flex;
+  position: relative;
+}
+
+.Btnredes {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2px;
+}
+.backRedes {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 5px;
+  background-color: var(--backredes-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.mainText {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+.mainSubText {
+  color: var(--secondtext-color);
+  font-size: 1.7rem;
+  margin-top: -1rem;
+  position: relative;
+  text-shadow: var(--secondtext-color) 0px 0px 10px;
+}
+.dark .mainText,
+.dark.mainSubText {
+  color: var(--secondtext-color);
+  text-shadow: var(--secondtext-color) 0px 0px 10px;
+}
+.dark .backRedes:hover {
+  background-color: var(--backredes-color-dark);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.backRedes:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes animeInOut {
+  0% {
+    left: 0; /* Posição inicial */
+  }
+  50% {
+    left: 20px; /* Mover para a direita (ou a quantidade desejada) */
+  }
+  100% {
+    left: 0; /* Voltar à posição inicial */
+  }
+}
+.imganime {
+  position: relative;
+  animation: animeInOut 2.1s linear 0s infinite alternate none running;
+}
+@media (max-width: 790px) {
+  .mainLogo {
+    display: none;
+  }
+
+  .dNaTEx {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
