@@ -92,3 +92,18 @@
     transform: translate3d(0, 0, 0);
   }
 }
+@media (max-width: 790px) {
+  .wrapper {
+    flex-direction: column; /* Mudar para coluna em telas pequenas */
+    align-items: center; /* Centralizar os itens em telas pequenas */
+  }
+
+  #skills-text,
+  .skills-cards {
+    width: 100%; /* Largura total em telas pequenas */
+  }
+
+  .skills-cards {
+    margin-top: 16px; /* Adicionar um espaçamento superior entre a parte superior e inferior */
+  }
+}

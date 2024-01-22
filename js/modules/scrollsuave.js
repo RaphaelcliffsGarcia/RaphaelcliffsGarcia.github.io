@@ -6,7 +6,7 @@ function suaveScroll() {
     const secction = document.querySelector(href);
     secction.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "center",
     });
   }
   linksInternos.forEach((links) => {

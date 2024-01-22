@@ -125,3 +125,18 @@ textarea:focus {
   color: var(--text-color);
   font-size: 15 px;
 }
+
+@media (max-width: 790px) {
+  .footerContato {
+    flex-direction: column; /* Mudar para coluna em telas pequenas */
+    align-items: center; /* Centralizar os itens em telas pequenas */
+  }
+  .contatoWay,
+  .mailContainer {
+    width: 100%; /* Largura total em telas pequenas */
+  }
+  .mailContainer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
