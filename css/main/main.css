@@ -91,3 +91,9 @@
     gap: 10px;
   }
 }
+
+@media (max-width: 420px) {
+  .mainText {
+    font-size: 1.8rem;
+  }
+}
