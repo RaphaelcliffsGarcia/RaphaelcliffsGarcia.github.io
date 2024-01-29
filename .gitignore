@@ -1,0 +1,8 @@
+# Arquivos temporários
+*.log
+*.swp
+# Diretórios a serem ignorados
+node_modules/
+dist/
+# Arquivo específico de JavaScript a ser ignorado
+js/modules/sendContato.js
